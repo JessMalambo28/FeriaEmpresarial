@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/data/imagenes/readme.txt" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/universidadean/feriaempresarial/interfaz/DialogoEmpresaExpositora.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/universidadean/feriaempresarial/interfaz/DialogoEmpresaVisitante.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/universidadean/feriaempresarial/interfaz/InterfazFeriaEmpresarial.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/universidadean/feriaempresarial/interfaz/PanelEmpresas.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/universidadean/feriaempresarial/interfaz/PanelExtension.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/universidadean/feriaempresarial/interfaz/PanelPuestos.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/universidadean/feriaempresarial/mundo/Empresa.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/universidadean/feriaempresarial/mundo/FeriaEmpresarial.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/universidadean/feriaempresarial/mundo/Puesto.java" charset="windows-1252" />
+  </component>
+</project>
