@@ -1,8 +1,8 @@
 /**
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  * $Id: FeriaEmpresarial.java 718 2008-10-03 21:07:55Z jua-gome $
- * Universidad Ean (Bogotá - Colombia)
- * Programa de Ingeniería de Sistemas
+ * Universidad Ean (BogotÃ¡ - Colombia)
+ * Programa de IngenierÃ­a de Sistemas
  * Licenciado bajo el esquema Academic Free License version 2.1
  * <p>
  * Bloque de Estudios: Desarrollo de Software
@@ -24,82 +24,82 @@ public class FeriaEmpresarial {
     // -----------------------------------------------------------------
 
     /**
-     * Número mínimo de personas de la zona norte
+     * NÃºmero mÃ­nimo de personas de la zona norte
      */
     public static final int MIN_PERSONAS_NORTE = 4;
 
     /**
-     * Número máximo de personas de la zona norte
+     * NÃºmero mÃ¡ximo de personas de la zona norte
      */
     public static final int MAX_PERSONAS_NORTE = 8;
 
     /**
-     * Número mínimo de personas de la zona sur
+     * NÃºmero mÃ­nimo de personas de la zona sur
      */
     public static final int MIN_PERSONAS_SUR = 3;
 
     /**
-     * Número máximo de personas de la zona sur
+     * NÃºmero mÃ¡ximo de personas de la zona sur
      */
     public static final int MAX_PERSONAS_SUR = 7;
 
     /**
-     * Número mínimo de personas de la zona oriente
+     * NÃºmero mÃ­nimo de personas de la zona oriente
      */
     public static final int MIN_PERSONAS_ORIENTE = 7;
 
     /**
-     * Número máximo de personas de la zona oriente
+     * NÃºmero mÃ¡ximo de personas de la zona oriente
      */
     public static final int MAX_PERSONAS_ORIENTE = 13;
 
     /**
-     * Número mínimo de personas de la zona oriente
+     * NÃºmero mÃ­nimo de personas de la zona oriente
      */
     public static final int MIN_PERSONAS_OCCIDENTE = 8;
 
     /**
-     * Número máximo de personas de la zona oriente
+     * NÃºmero mÃ¡ximo de personas de la zona oriente
      */
     public static final int MAX_PERSONAS_OCCIDENTE = 14;
 
     /**
-     * Número mínimo de personas de la zona centro
+     * NÃºmero mÃ­nimo de personas de la zona centro
      */
     public static final int MIN_PERSONAS_CENTRO = 6;
 
     /**
-     * Número máximo de personas de la zona centro
+     * NÃºmero mÃ¡ximo de personas de la zona centro
      */
     public static final int MAX_PERSONAS_CENTRO = 12;
 
     /**
-     * Número de puestos en la zona norte
+     * NÃºmero de puestos en la zona norte
      */
     public static final int NUM_PUESTOS_NORTE = 4;
 
     /**
-     * Número de puestos en la zona sur
+     * NÃºmero de puestos en la zona sur
      */
     public static final int NUM_PUESTOS_SUR = 4;
 
     /**
-     * Número de puestos en la zona oriente
+     * NÃºmero de puestos en la zona oriente
      */
     public static final int NUM_PUESTOS_ORIENTE = 3;
 
     /**
-     * Número de puestos en la zona occidente
+     * NÃºmero de puestos en la zona occidente
      */
     public static final int NUM_PUESTOS_OCCIDENTE = 3;
 
     /**
-     * Número de puestos en la zona centro
+     * NÃºmero de puestos en la zona centro
      */
     public static final int NUM_PUESTOS_CENTRO = 8;
 
     /**
-     * Número máximo de personas asistentes para una empresa visitante
+     * NÃºmero mÃ¡ximo de personas asistentes para una empresa visitante
      */
     public static final int MAX_PERSONAS_ASISTENTES = 20;
 
@@ -108,7 +108,7 @@ public class FeriaEmpresarial {
     // -----------------------------------------------------------------
 
     /**
-     * Colección de empresas de la feria
+     * ColecciÃ³n de empresas de la feria
      */
     private ArrayList<Empresa> empresas;
 
@@ -123,8 +123,8 @@ public class FeriaEmpresarial {
 
     /**
      * Constructor de la feria empresarial<br>
-     * <b>post </b> La lista de empresas fue inicializada vacía.<br>
-     * El arreglo de puestos de la feria fue inicializado según el total de puestos<br>
+     * <b>post </b> La lista de empresas fue inicializada vacÃ­a.<br>
+     * El arreglo de puestos de la feria fue inicializado segÃºn el total de puestos<br>
      */
     public FeriaEmpresarial() {
         empresas = new ArrayList<>();
@@ -133,7 +133,7 @@ public class FeriaEmpresarial {
     }
 
     // -----------------------------------------------------------------
-    // Métodos
+    // MÃ©todos
     // -----------------------------------------------------------------
 
     /**
@@ -157,13 +157,13 @@ public class FeriaEmpresarial {
     /**
      * Ingresa una empresa visitante a la feria<br>
      * <b>pre: </b>La lista de empresas y los puestos han sido inicializados<br>
-     * <b>post: </b>Se agregó una empresa asistente a la feria con los valores dados por parámetro<br>
+     * <b>post: </b>Se agregÃ³ una empresa asistente a la feria con los valores dados por parÃ¡metro<br>
      * El tipo de la empresa se ha inicializado como visitante<br>
      * @param nNombreEmpresa Es el nombre de la empresa. nNombreEmpresa != null,nNombreEmpresa != ""
-     * @param nNumeroPersonasAsistentes Es el número de personas de la empresa asistentes a la feria. nNumeroPersonasAsistentes > 0
+     * @param nNumeroPersonasAsistentes Es el nÃºmero de personas de la empresa asistentes a la feria. nNumeroPersonasAsistentes > 0
      * @throws Exception <br>
      *         1. Si ya existe una empresa con el nombre ingresado<br>
-     *         2. Si el numero de personas asistentes excede el numero máximo de personas asistentes
+     *         2. Si el numero de personas asistentes excede el numero mÃ¡ximo de personas asistentes
      */
     public void ingresarEmpresaVisitante(String nNombreEmpresa, int nNumeroPersonasAsistentes) throws Exception {
         boolean encontrado = false;
@@ -180,7 +180,7 @@ public class FeriaEmpresarial {
         }
 
         if (nNumeroPersonasAsistentes > MAX_PERSONAS_ASISTENTES) {
-            throw new Exception("Número de personas no permitido");
+            throw new Exception("NÃºmero de personas no permitido");
         }
 
         empresas.add(new Empresa(nNombreEmpresa, Empresa.VISITANTE, nNumeroPersonasAsistentes));
@@ -189,13 +189,13 @@ public class FeriaEmpresarial {
     /**
      * Ingresa una empresa expositora a la feria y ocupa el puesto de la empresa<br>
      * <b>pre: </b>La lista de empresas y los puestos han sido inicializados<br>
-     * <b>post: </b>Se ha adicionado una empresa expositora a la contenedora de empresas con los valores dados por parámetro<br>
+     * <b>post: </b>Se ha adicionado una empresa expositora a la contenedora de empresas con los valores dados por parÃ¡metro<br>
      * El tipo de la empresa se ha inicializado como expositora<br>
-     * Se ha ocupado el puesto indicado por parámetro<br>
+     * Se ha ocupado el puesto indicado por parÃ¡metro<br>
      * @param nNombreEmpresa Es el nombre de la empresa. nNombreEmpresa != null,nNombreEmpresa != ""
-     * @param nNumeroPersonasExpositoras Es el número de personas de la empresa expositora . nNumeroPersonasExpositoras > 0
-     * @param zonaPuesto Es la zona donde se ubicará la empresa. zonaPuesto != null, zonaPuesto != ""
-     * @param numeroPuesto Es el número del puesto sobre la zona. numeroPuesto > 0
+     * @param nNumeroPersonasExpositoras Es el nÃºmero de personas de la empresa expositora . nNumeroPersonasExpositoras > 0
+     * @param zonaPuesto Es la zona donde se ubicarÃ¡ la empresa. zonaPuesto != null, zonaPuesto != ""
+     * @param numeroPuesto Es el nÃºmero del puesto sobre la zona. numeroPuesto > 0
      * @throws Exception <br>
      *         1. Si ya existe una empresa con el nombre ingresado <br>
      *         3. No existe el puesto escogido <br>
@@ -218,7 +218,7 @@ public class FeriaEmpresarial {
 
         if (zonaPuesto.equals(Puesto.ZONA_NORTE)) {
             if (nNumeroPersonasExpositoras < MIN_PERSONAS_NORTE || nNumeroPersonasExpositoras > MAX_PERSONAS_NORTE) {
-                throw new Exception("Número de personas no permitidas para la zona");
+                throw new Exception("NÃºmero de personas no permitidas para la zona");
             }
 
             if (numeroPuesto > NUM_PUESTOS_NORTE) {
@@ -227,14 +227,14 @@ public class FeriaEmpresarial {
 
             int posicion = numeroPuesto - 1;
             if (puestos[posicion].estaOcupado()) {
-                throw new Exception("El puesto ya está ocupado");
+                throw new Exception("El puesto ya estÃ¡ ocupado");
             }
 
             puestos[posicion].ocuparPuesto(nNombreEmpresa);
         }
         else if (zonaPuesto.equals(Puesto.ZONA_ORIENTE)) {
             if (nNumeroPersonasExpositoras < MIN_PERSONAS_ORIENTE || nNumeroPersonasExpositoras > MAX_PERSONAS_ORIENTE) {
-                throw new Exception("Número de personas no permitidas para la zona");
+                throw new Exception("NÃºmero de personas no permitidas para la zona");
             }
 
             if (numeroPuesto > NUM_PUESTOS_ORIENTE) {
@@ -250,7 +250,7 @@ public class FeriaEmpresarial {
         }
         else if (zonaPuesto.equals(Puesto.ZONA_SUR)) {
             if (nNumeroPersonasExpositoras < MIN_PERSONAS_SUR || nNumeroPersonasExpositoras > MAX_PERSONAS_SUR) {
-                throw new Exception("Número de personas no permitidas para la zona");
+                throw new Exception("NÃºmero de personas no permitidas para la zona");
             }
 
             if (numeroPuesto > NUM_PUESTOS_SUR) {
@@ -266,7 +266,7 @@ public class FeriaEmpresarial {
         }
         else if (zonaPuesto.equals(Puesto.ZONA_OCCIDENTE)) {
             if (nNumeroPersonasExpositoras < MIN_PERSONAS_OCCIDENTE || nNumeroPersonasExpositoras > MAX_PERSONAS_OCCIDENTE) {
-                throw new Exception("Número de personas no permitidas para la zona");
+                throw new Exception("NÃºmero de personas no permitidas para la zona");
             }
 
             if (numeroPuesto > NUM_PUESTOS_OCCIDENTE) {
@@ -282,7 +282,7 @@ public class FeriaEmpresarial {
         }
         else if (zonaPuesto.equals(Puesto.ZONA_CENTRO)) {
             if (nNumeroPersonasExpositoras < MIN_PERSONAS_CENTRO || nNumeroPersonasExpositoras > MAX_PERSONAS_CENTRO) {
-                throw new Exception("Número de personas no permitidas para la zona");
+                throw new Exception("NÃºmero de personas no permitidas para la zona");
             }
 
             if (numeroPuesto > NUM_PUESTOS_CENTRO) {
@@ -305,11 +305,11 @@ public class FeriaEmpresarial {
     }
 
     /**
-     * Desocupa un puesto dado el nombre de la empresa por parámetro<br>
+     * Desocupa un puesto dado el nombre de la empresa por parÃ¡metro<br>
      * <b>pre: </b>La lista de empresas y los puestos han sido inicializados<br>
-     * <b>post: </b>Se desocupó el puesto que ocupaba la empresa<br>
+     * <b>post: </b>Se desocupÃ³ el puesto que ocupaba la empresa<br>
      * El estado del puesto que ocupaba ha sido inicializado en disponible<br>
-     * La empresa cuyo nombre ha sido dado por parámetro ha sido eliminada de la lista de empresas<br>
+     * La empresa cuyo nombre ha sido dado por parÃ¡metro ha sido eliminada de la lista de empresas<br>
      * @param nNombreEmpresa Es el nombre de la empresa. nNombreEmpresa != null,nNombreEmpresa != ""
      * @throws Exception <br>
      *         1. Si no existe una empresa con el nombre ingresado <br>
@@ -349,10 +349,10 @@ public class FeriaEmpresarial {
     }
 
     /**
-     * Retorna el porcentaje de ocupación de puestos<br>
+     * Retorna el porcentaje de ocupaciÃ³n de puestos<br>
      * <b>pre: </b>Los puestos han sido inicializados<br>
-     * <b>post: </b>Se retornó el porcentaje de puestos ocupados<br>
-     * @return Porcentaje de ocupación de puestos<br>
+     * <b>post: </b>Se retornÃ³ el porcentaje de puestos ocupados<br>
+     * @return Porcentaje de ocupaciÃ³n de puestos<br>
      */
     public double porcentajeOcupacion() {
         int numPuestosOcupados = 0;
@@ -374,8 +374,8 @@ public class FeriaEmpresarial {
     /**
      * Sugiere un puesto disponible dada una cantidad de expositores<br>
      * <b>pre: </b>Los puestos han sido inicializados<br>
-     * <b>post: </b>Se retornó el puesto sugerido<br>
-     * El puesto sugerido es aquel que primero puede albergar la cantidad de expositores y está disponible<br>
+     * <b>post: </b>Se retornÃ³ el puesto sugerido<br>
+     * El puesto sugerido es aquel que primero puede albergar la cantidad de expositores y estÃ¡ disponible<br>
      * El recorrido por zonas se hace en el siguiente orden: Norte, Oriente, Sur, Occidente, Centro.
      * @param numeroExpositores > 0
      * @return Puesto sugerido para la cantidad de expositores. null si no hay puesto disponible que albergue a los expositores.
@@ -398,9 +398,9 @@ public class FeriaEmpresarial {
 
     /**
      * Inicializa los puestos de la feria empresarial <br>
-     * <b>pre: </b> El arreglo de puestos tiene tamaño NUM_PUESTOS_NORTE + NUM_PUESTOS_SUR + NUM_PUESTOS_ORIENTE + NUM_PUESTOS_OCCIDENTE + NUM_PUESTOS_CENTRO<br>
-     * <b>post: </b> Los puestos han sido inicializados con sus valores de acuerdo a su zona de ubicación<br>
-     * Los puestos se llenan en el siguiente orden por zonas: Norte, Oriente, Sur, Occidente, Centro. Cada zona se llena por número de puesto incrementálmente
+     * <b>pre: </b> El arreglo de puestos tiene tamaÃ±o NUM_PUESTOS_NORTE + NUM_PUESTOS_SUR + NUM_PUESTOS_ORIENTE + NUM_PUESTOS_OCCIDENTE + NUM_PUESTOS_CENTRO<br>
+     * <b>post: </b> Los puestos han sido inicializados con sus valores de acuerdo a su zona de ubicaciÃ³n<br>
+     * Los puestos se llenan en el siguiente orden por zonas: Norte, Oriente, Sur, Occidente, Centro. Cada zona se llena por nÃºmero de puesto incrementÃ¡lmente
      */
     private void crearPuestos() {
         int numPuesto = 1;
@@ -440,16 +440,16 @@ public class FeriaEmpresarial {
     }
 
     // -----------------------------------------------------------------
-    // Puntos de Extensión
+    // Puntos de ExtensiÃ³n
     // -----------------------------------------------------------------
 
     /**
-     * Método para la extensión 1
+     * MÃ©todo para la extensiÃ³n 1
      * @return respuesta1
      */
     public String metodo1() {
         /**
-         * ¿Cual es la zona mas ocupada?
+         * Â¿Cual es la zona mas ocupada?
          */
 
         String zonas = Puesto.ZONA_SUR;
@@ -501,9 +501,9 @@ public class FeriaEmpresarial {
         l = new int[5];
 
         /**
-         * posición 0 = Zona centro
-         * posición 1 = Zona norte
-         * posición 2 = Zona sur
+         * posiciÃ³n 0 = Zona centro
+         * posiciÃ³n 1 = Zona norte
+         * posiciÃ³n 2 = Zona sur
          */
         l[0] = pozonacentro;
         l[1] = pozonanorte;
@@ -518,61 +518,57 @@ public class FeriaEmpresarial {
                 mayor = l[x];
                 if (mayor == 4) {
                     if (mayor == 4 && x == 1 ){
-                        return "Los puestos de la Zona norte estan todos ocupados debera elegir otra zona si desea agregar más expositores";
+                        return "Los puestos de la Zona norte estan todos ocupados debera elegir otra zona si desea agregar mÃ¡s expositores";
                     }
                     if (mayor == 4 && x == 2 ){
-                        return "Los puestos de la Zona sur estan todos ocupados debera elegir otra zona si desea agregar más expositores";
+                        return "Los puestos de la Zona sur estan todos ocupados debera elegir otra zona si desea agregar mÃ¡s expositores";
                     }
                 }
                  if (x == 1 && mayor != 4 ){
-                        return "Actualmente la Zona norte cuenta con la mayor ocupación de puestos";
+                        return "Actualmente la Zona norte cuenta con la mayor ocupaciÃ³n de puestos";
 
                 }
                 if (x == 2 && mayor != 4 ){
-                    return "Actualmente la Zona sur cuenta con la mayor ocupación de puestos";
+                    return "Actualmente la Zona sur cuenta con la mayor ocupaciÃ³n de puestos";
 
                 }
                 if (mayor == 8) {
                     if (mayor == 8 && x == 0 ){
-                        return "Los puestos de la Zona centro estan todos ocupados debera elegir otra zona si desea agregar más expositores";
+                        return "Los puestos de la Zona centro estan todos ocupados debera elegir otra zona si desea agregar mÃ¡s expositores";
                     }
                 }
                 if (x == 0 && mayor != 8 ){
-                    return "Actualmente la Zona centro cuenta con la mayor ocupación de puestos";
+                    return "Actualmente la Zona centro cuenta con la mayor ocupaciÃ³n de puestos";
 
                 }
 
                 if (mayor == 3) {
                     if (mayor == 3 && x == 3 ){
-                        return "Los puestos de la Zona occidente estan todos ocupados debera elegir otra zona si desea agregar más expositores";
+                        return "Los puestos de la Zona occidente estan todos ocupados debera elegir otra zona si desea agregar mÃ¡s expositores";
                     }
                     if (mayor == 3 && x == 4 ){
-                        return "Los puestos de la Zona oriente estan todos ocupados debera elegir otra zona si desea agregar más expositores";
+                        return "Los puestos de la Zona oriente estan todos ocupados debera elegir otra zona si desea agregar mÃ¡s expositores";
                     }
                 }
                 if (x == 3 && mayor != 3 ){
-                    return "Actualmente la Zona occidente cuenta con la mayor ocupación de puestos";
+                    return "Actualmente la Zona occidente cuenta con la mayor ocupaciÃ³n de puestos";
 
                 }
                 if (x == 4 && mayor != 3 ){
-                    return "Actualmente la Zona oriente cuenta con la mayor ocupación de puestos";
+                    return "Actualmente la Zona oriente cuenta con la mayor ocupaciÃ³n de puestos";
 
                 }
 
             }
         }
 
-        /*String t = "el numero mayor dentro de los numeros es"+mayor;
-        String o = "el numero menor dentro de los numeros es";
-
-
-        return new StringBuilder().append(t).append(o).toString();*/
+     
         return "Elija los puestos por zona correspondiente";
     }
 
 
     /**
-     * Método para la extensión2
+     * MÃ©todo para la extensiÃ³n2
      * @return respuesta2
      */
     public String metodo2() {
